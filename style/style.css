@@ -1,0 +1,130 @@
+
+body {
+  width: 928px;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+#carousel_wrapper {
+  width: 100%;
+  position: relative;
+  background-color: #f1f1f1;
+  height: 930px;
+}
+
+#carousel_wrapper ul {
+  padding: 0;
+}
+
+#carousel_wrapper li {
+  float: left;
+  list-style: none;
+}
+
+#carousel_wrapper .image_wrapper {
+  width: 290px;
+  margin: 0 auto;
+}
+
+#carousel_wrapper .image_wrapper ul {
+  padding-top: 50px;
+}
+
+#carousel_wrapper .image_wrapper li {
+  position: absolute;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  opacity: 0;
+  z-index: 0;
+}
+
+#carousel_wrapper .image_wrapper li.transition {
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -webkit-transform: translate(0, -10px);
+  -moz-transform: translate(0, -10px);
+  -o-transform: translate(0, -10px);
+  transform: translate(0, -10px);
+  opacity: 1;
+  z-index: 10;
+}
+
+#carousel_wrapper .image_wrapper li img {
+  margin-bottom: 16px;
+}
+
+#carousel_wrapper .app_icon_wrapper {
+  top: 760px;
+  position: absolute;
+  width: 490px;
+  left: 50%;
+  -webkit-transform: translate(-246px, 0);
+  -moz-transform: translate(-246px, 0);
+  -o-transform: translate(-246px, 0);
+  transform: translate(-246px, 0);
+}
+
+#carousel_wrapper .app_icon_wrapper li {
+  margin: 0 56px 0 0;
+}
+
+#carousel_wrapper .app_icon_wrapper li.last {
+  margin-right: 0;
+}
+
+#carousel_wrapper .app_icon_wrapper li span {
+  display: block;
+  width: 80px;
+  height: 8px;
+  margin: 0 0 16px 0;
+  background: transparent url('../images/dot.png') no-repeat 36px 0;
+}
+
+#carousel_wrapper .app_icon_wrapper li span.hide {
+  background-image: none;
+}
+
+#carousel_wrapper .app_icon_wrapper li img:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#carousel_wrapper .app_icon_wrapper li img:active {
+  -webkit-transform: scale(0.9, 0.9);
+  -moz-transform: scale(0.9, 0.9);
+  -o-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+  -webkit-transition: translate 0.2s ease-in-out;
+  -moz-transition: translate 0.2s ease-in-out;
+  -o-transition: translate 0.2s ease-in-out;
+  transition: translate 0.2s ease-in-out;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+  #carousel_wrapper .app_icon_wrapper li span {
+    background: transparent url('../images/dot@2x.png') no-repeat 36px 0;
+    background-size: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
